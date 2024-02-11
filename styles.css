@@ -1,0 +1,11 @@
+@import url(otra-hoja-de-estilos.css);
+/* es una mala practica hacer esto. Ya que son bloqueantes a la hora de que el navegador lea esta instruccion.
+Esto es asi en CSS puro, no en los preprocesadores.*/
+
+p {
+  background-color: rgb(255, 205, 205);
+}
+
+b ~ * {
+  background-color: yellow;
+}

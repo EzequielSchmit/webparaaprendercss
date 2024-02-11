@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎨🖌Aprendiendo CSS🎨🖌</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Aprendiendo CSS🎨🖌</h1>
+  <p><i>Cascading Styling Sheets</i> (hojas de estilo en cascada)</p>
+  
+  <article>
+    <h2>Selectores avanzados</h2>
+    <h3>Selectores de hijos</h3>
+    <ul>
+      <li>selector de hijos directos, por ejemplo: "b > p" (un parrafo hijo directo de un elemento b)</li>
+      <li>selector de descendientes, por ejemplo: "b p" (un parrafo que sea descendiente de un elemento b)</li>
+    </ul>
+    <h3>Selector de hermanos</h3>
+    <ul>
+      <li>selector de hermanos general: "elemA ~ elemB" (AltGr + '+')</li>
+      <p>Este selector selecciona a los elementos de tipo elemB que son hermanos del elemento elemA, apartir de la aparicion del elemento elemA (no antes, es decir va en 'cascada', de arriba a abajo) <br>
+      Se pueden usar selectores del <b>tipo</b> del elemento, de <b>clase</b> o por <b>id</b></p>
+      <li>selector de hermanos adyacentes: "elemA + elemB"</li>
+      <p>Este selector selecciona al elemento adyacente de elemA si y solo si es del tipo de elemB. Ademas, como el selector anterior, solo podria seleccionar a los elementos posteriores (en este caso, el siguiente de elemA).</p>
+
+    </ul>
+  </article>
+</body>
+</html>
