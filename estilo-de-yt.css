@@ -1,0 +1,224 @@
+@import url(otra-hoja-de-estilos.css);
+/* es una mala practica hacer esto. Ya que son bloqueantes a la hora de que el navegador lea esta instruccion.
+Esto es asi en CSS puro, no en los preprocesadores.*/
+
+p {
+  background-color: rgb(255, 205, 205);
+}
+
+b ~ * {
+  background-color: yellow;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+:root {
+  --aside-width: 18%; /* Definición de la variable */
+  --header-height: 25vh;
+}
+body {
+  display: flex;
+  margin: 0;
+}
+
+
+aside {
+  display: inline-block;
+  width: var(--aside-width);
+  height: 100%;
+  top: var(--header-height);
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  
+}
+section {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding: 20px 0;
+}
+section h2 {
+  margin-top: 0; /* Restablece el margen superior del h2 */
+  margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario */
+}
+
+
+
+
+/*        */
+/* HEADER */
+/*        */
+header {
+  display: flex;
+  flex-direction: column;
+
+
+  background-color: #181818;
+  /* display: inline-block; */
+  width: 100%;
+  height: var(--header-height);
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  
+}
+header * {
+  padding: 0;
+  margin: 0;
+}
+header > * {
+  margin: auto 0;
+}
+/*                                 */
+/* H1, H2, H3 center configuration */
+/*                                 */
+
+h1, h2, h3 {
+  display: flex;
+  align-items: center; /*vertically*/
+  /* justify-content: center; */ /*horizontally*/
+}
+
+
+/*             */
+/* HEADER MENU */
+/*             */
+header {
+  display: flex;
+  flex-direction: row;
+}
+header > * {
+  margin: auto;
+}
+.main-buttons {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.video-searcher {
+  width: 40%;
+  height: 30px;
+  display: inline-block;
+  background-color: red;
+  border-radius: 15px;
+}
+.video-searcher > * {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  border-width: 0px;
+  float: left;
+}
+:root {
+  --searchbar-radius: 15px;
+  --percentage-of-search-bar: 80%;
+}
+.video-searcher > input {
+  width: var(--percentage-of-search-bar);
+  border-top-left-radius: var(--searchbar-radius);
+  border-bottom-left-radius: var(--searchbar-radius);
+  
+}
+.video-searcher > button {
+  width: calc( 100% - var(--percentage-of-search-bar) );
+  border-top-right-radius: var(--searchbar-radius);
+  border-bottom-right-radius: var(--searchbar-radius);
+  
+}
+
+
+
+/*       */
+/* TITLE */
+/*       */
+.title {
+  padding: 0 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  
+}
+.title-icon {
+  display: flex;
+  flex-direction: row;
+}
+.title-icon > * {
+  height: 67px;
+  margin: 0;
+  padding: 0;
+}
+.title-icon > img {
+  margin-right: 10px;
+}
+
+
+
+
+
+/*          */
+/* USER NAV */
+/*          */
+.user-nav {
+  background-color: #0f0f0f;
+}
+
+.user-nav > section {
+  display: flex;
+  flex-direction: column;
+  background-color: #0f0f0f;
+  padding: 20px 0;
+}
+
+hr {
+  background-color: #3c3c3c;
+  border-color: #3c3c3c;
+  margin: 0;
+}
+
+.user-nav > section > * {
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  background-color: #0f0f0f;
+  color: white;
+  border-width: 0;
+  border-radius: 10px;
+  text-align: center;
+}
+.user-nav > section > h2 {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #171717;
+
+}
+.user-nav > section > button {
+  
+  font-size: 14px;
+}
+.user-nav > section > *:hover {
+  background-color: rgb(40, 40, 40);
+}
+
+/* MAIN CONFIG */
+main {
+  display: inline-block;
+  width: calc(100% - --aside-width);
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+  /* top: 20%; */
+  margin-left: var(--aside-width);
+  margin-top: var(--header-height);
+  padding: 20px;
+  padding-top: 55px;
+  background-color: #1f1f1f;
+  
+}
+

@@ -4,31 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🎨🖌Aprendiendo CSS🎨🖌</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="estilo-de-main.css">
 </head>
 <body>
 
-  <h1>Aprendiendo CSS🎨🖌</h1>
-  <p><i>Cascading Styling Sheets</i> (hojas de estilo en cascada)</p>
   
-  <article>
-    <h2>Selectores avanzados</h2>
-    <h3>Selectores de hijos</h3>
-    <ul>
-      <li>selector de hijos directos, por ejemplo: "b > p" (un parrafo hijo directo de un elemento b)</li>
-      <li>selector de descendientes, por ejemplo: "b p" (un parrafo que sea descendiente de un elemento b)</li>
-    </ul>
-    <h3>Selector de hermanos</h3>
+  <header>
+    <h1>Aprendiendo CSS🎨🖌</h1>
+    <p><i>Cascading Styling Sheets</i> (hojas de estilo en cascada)</p>
+  </header>
+
+  <aside>
+    <nav>
+      <ul>
+        <li><a class="link-interior" href="#selectores-avanzados">Selectores avanzados</a></li>
+        <ul>
+          <li><a class="link-interior" href="#selectores-avanzados-de-hijos">de hijos</a></li>
+          <li><a class="link-interior" href="#selectores-avanzados-de-hermanos">de hermanos</a></li>
+          <li><a class="link-interior" href="#selectores-avanzados-otros">otros</a></li>
+        </ul>
+        <li><a href="pagina-parecida-a-yt.html">Mi version de youtube</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+
+    <article>
+      <h2 id="selectores-avanzados">Selectores avanzados</h2>
+      <h3 id="selectores-avanzados-de-hijos">Selectores de hijos</h3>
+      <ul>
+        <li>selector de hijos directos, por ejemplo: "b > p" (un parrafo hijo directo de un elemento b)</li>
+        <li>selector de descendientes, por ejemplo: "b p" (un parrafo que sea descendiente de un elemento b)</li>
+      </ul>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quibusdam dolorum tempore dolorem, enim, provident voluptatum similique necessitatibus molestias exercitationem qui quae dicta distinctio amet voluptates vero magnam. Dolore, dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet culpa modi doloremque, labore, quasi libero, optio iure ipsam dolorum molestias harum sit vero illum nostrum vitae voluptate eius debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi molestiae eum obcaecati quae quasi et libero rem consequatur odit maxime? Laboriosam voluptatem placeat officiis voluptatibus expedita sapiente explicabo, doloribus cupiditate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit natus explicabo ratione earum maiores officia, architecto veniam eum quaerat voluptatem? Assumenda quae eveniet praesentium mollitia quam excepturi ullam ab accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eaque consectetur ut quisquam aperiam quibusdam odit quaerat provident quidem sunt maxime, voluptatem dolorum, sapiente ab illum inventore repellendus perferendis autem.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit totam omnis, inventore ut corporis ad. Voluptates ut illum cumque consequatur earum! Cupiditate autem eum repudiandae quasi explicabo repellendus consequatur fuga!
+    </p>
+    <h3 id="selectores-avanzados-de-hermanos">Selector de hermanos</h3>
     <ul>
       <li>selector de hermanos general: "elemA ~ elemB" (AltGr + '+')</li>
       <p>Este selector selecciona a los elementos de tipo elemB que son hermanos del elemento elemA, apartir de la aparicion del elemento elemA (no antes, es decir va en 'cascada', de arriba a abajo) <br>
       Se pueden usar selectores del <b>tipo</b> del elemento, de <b>clase</b> o por <b>id</b></p>
       <li>selector de hermanos adyacentes: "elemA + elemB"</li>
       <p>Este selector selecciona al elemento adyacente de elemA si y solo si es del tipo de elemB. Ademas, como el selector anterior, solo podria seleccionar a los elementos posteriores (en este caso, el siguiente de elemA).</p>
-
     </ul>
-    <h3>Aca va a ir otro tema sobre otro tipo de selectores</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vero similique totam tempore dignissimos error omnis maiores qui eveniet ipsum, itaque officiis excepturi quia reiciendis, eos nemo numquam nisi recusandae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat consectetur soluta labore necessitatibus illo nulla sed harum et delectus hic debitis veritatis odio accusamus voluptas odit dignissimos unde, voluptate eveniet!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, possimus repellat, recusandae quia itaque at amet sint est iure fuga tempore quaerat sed mollitia fugiat exercitationem voluptas! Unde, sapiente? Porro.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, aut at magnam nemo soluta recusandae illum corrupti repudiandae nesciunt ut ducimus et nisi nostrum sit blanditiis, pariatur quo eius suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dicta. Tempore, voluptate molestiae magnam autem enim veniam, eligendi impedit ipsa hic optio velit officiis dolores maxime ipsum commodi libero ea.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam aliquid enim iusto cumque dolores sint consequatur, placeat in sequi autem ducimus? Consequuntur repellat nemo sapiente explicabo libero commodi temporibus ratione!
+    </p>
+    <h3 id="selectores-avanzados-otros">Otros selectores</h3>
     <p><i>No hay nada que ver aqui</i></p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident maiores amet voluptatum, placeat facere non reprehenderit vel cupiditate, dolorem optio fugit delectus? Voluptates vel accusantium laborum repellat a doloremque adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni nemo debitis minus expedita quam, sit nisi sed tenetur molestiae ratione assumenda cupiditate quae officiis quidem, reiciendis iusto blanditiis exercitationem.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore id unde eaque reiciendis quasi voluptas quidem corporis facilis temporibus voluptatem mollitia alias sunt veniam, odit dolores amet molestiae similique necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum incidunt aliquid repellat perferendis illo quam, et dolore repudiandae assumenda voluptatibus omnis voluptatem rem. Veniam maxime laboriosam quasi pariatur necessitatibus natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sapiente dolores debitis dolorum earum quae nemo voluptate sequi quod corporis, esse iste reiciendis quaerat, minima quidem placeat inventore quasi? Itaque?
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis maxime laboriosam voluptatibus doloribus totam. Reprehenderit architecto quo odio asperiores temporibus sequi eaque minus blanditiis, voluptatum nemo! Pariatur asperiores dolorum eius!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum impedit maxime fuga est nisi, placeat, ut amet, perferendis nemo modi facere cum quia? Fuga, totam? Temporibus voluptatibus mollitia quo optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eos inventore veritatis magnam veniam assumenda commodi facere, dolore molestiae libero cumque. Inventore vero repudiandae perferendis voluptate corrupti, nam delectus minus.
+    </p>
+
+
   </article>
+  <article>
+    <h2>Otro tema</h2>
+    <h3>mas cosas</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptatibus, minima nobis incidunt expedita praesentium dolores eum. Adipisci temporibus quos voluptatibus blanditiis ad. Autem, rem maiores dolore iste nihil reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aperiam veritatis et fuga facilis inventore similique numquam distinctio ullam cumque ipsam nemo, a dolorem omnis architecto libero non explicabo excepturi.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quo beatae ipsam dolorem cupiditate ad illo enim, reiciendis incidunt quam reprehenderit aperiam itaque inventore doloribus fugit error deleniti odit animi.
+    </p>
+  </article>
+</main>
+
+
+<script src="script.js"></script>
+<script>
+  
+</script>
 </body>
 </html>
